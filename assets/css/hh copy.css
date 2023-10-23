@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #D27722;
+    --text-color: #252422;
+    --text-color-secondary: #403D39;
+    --primary-lighten: #FFDBB8;
+    --secondary-background: #FFFDF4;
+    --body-color: #ffffff;
+}
+
+/* ==================== Explore & lern ==================== */
+
+
+
+/* PC */
+@media screen and (min-width: 992px) {}
+
+/* PC & Tablet */
+@media screen and (min-width: 768px) {}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:990px) {}
+
+/* Tablet & mobie */
+@media screen and (max-width: 991px) {}
+
+/* mobile */
+@media screen and (max-width: 767px) {}

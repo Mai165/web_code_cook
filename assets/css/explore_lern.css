@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #D27722;
+    --text-color: #252422;
+    --text-color-secondary: #403D39;
+    --primary-lighten: #FFDBB8;
+    --secondary-background: #FFFDF4;
+    --body-color: #ffffff;
+}
+
+/* ==================== Explore & lern ==================== */
+
+.list__el {
+    display: grid;
+    gap: 24px;
+}
+
+.el__item.dpfl {
+    padding: 24px 34px;
+    border-radius: 16px;
+    border: 1px solid var(--primary-lighten);
+    background: var(--background-color);
+}
+
+.el__item__img {
+    margin-right: 28px;
+}
+
+.el__content__title.dpfl {
+    justify-content: space-between;
+}
+
+/* list-category__show */
+.el__show {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: 32px;
+}
+
+.el__show__img {
+    margin-left: 13px;
+}
+
+
+/* PC */
+@media screen and (min-width: 992px) {
+    .explore-learn {
+        margin-top: 253px;
+    }
+
+    .el.dpfl {
+        justify-content: space-between;
+    }
+
+    .el__search__img {
+        margin-right: 10px;
+    }
+
+    .list__el {
+        margin-top: 68px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+/* PC & Tablet */
+@media screen and (min-width: 768px) {
+    .el__title__img {
+        margin-right: 20px;
+    }
+
+    .el__desc {
+        width: 552px;
+        margin-top: 7px;
+        margin-left: 69px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:990px) {
+    .explore-learn {
+        margin-top: 200px;
+    }
+
+    .el__item.dpfl {
+        width: calc(50% -24px);
+    }
+
+    .list__el {
+        margin-top: 44px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+/* Tablet & mobie */
+@media screen and (max-width: 991px) {
+    .el__search {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+
+    .heading.lv2 {
+        font-size: 3.2rem;
+    }
+
+    .explore-learn {
+        margin-top: 112px;
+    }
+
+    .el__desc {
+        display: none;
+    }
+
+    .list__el {
+        margin-top: 47px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
